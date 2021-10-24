@@ -31,7 +31,9 @@ const Todo = () => {
     return(
         <Fragment>
             {TodoState.map(Todo => {
-                return <p><TodoItem TodoProps={Todo} markCompletedFunc={markCompleted} /></p>
+                return (
+                <p><TodoItem key={Todo.id} TodoProps={Todo} markCompletedFunc={markCompleted} /></p>
+                )
             })}
         </Fragment>
     )

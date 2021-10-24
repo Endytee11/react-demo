@@ -1,15 +1,10 @@
-import React, { useState } from 'react';
-
+import React from 'react'
 
 const Header = () =>{
-    const [HeaderList,HeaderListValue] = useState(['cong viec can lam'])
     return(
         <header>
-            {HeaderList.map(Header => {
-                return <h1>{Header}</h1>
-            })}
+            <h1>cong viec can lam</h1>
         </header>
     )
-}
-
+    }
 export default Header

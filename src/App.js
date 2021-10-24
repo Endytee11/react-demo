@@ -9,7 +9,7 @@ const App = () =>{
       <Fragment>
         <Header />
         <Todo />
-        </Fragment>
+      </Fragment>
     )
 }
 
