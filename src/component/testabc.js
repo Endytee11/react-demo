@@ -1,8 +1,36 @@
-import React, {Fragment} from "react"
+import react, { Fragment } from 'react'
+import PropTypes from 'prop-types'
 
-<Fragment>
-    <h1>ko co dau</h1>
-    <h1>ko  222</h1>
-<h1>ko co gi dau 3333</h1>
-<h1>tao conflict choi 44444444</h1>
-</Fragment>
+const Hello = props => {
+    const Hello_array = ([
+        {
+            id: 1,
+            name: "name hello1",
+        },
+        {
+            id: 2,
+            name: "name hello2",
+        },
+        {
+            id: 3,
+            name: "name hello3",
+        },
+        {
+            id: 4,
+            name: "name hello4",
+        }
+    ])
+    //console.log(Hello_array)
+
+    return(
+        <Fragment>
+            {Hello_array.map(Hello => {
+                return(
+                    <p id={Hello.id} name={Hello.name}>hello {Hello.id} va {Hello.name}</p>
+                )
+            })}
+        </Fragment>
+    )
+}
+
+export default Hello
